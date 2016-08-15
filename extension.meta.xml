@@ -13,6 +13,11 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.2.2" date="2016-08-15" min="2.3">
+			- Supported on PHP 7
+			- Added update for older version
+			- Fixed install missing validator
+		</release>
 		<release version="1.2.1" date="2013-02-25" min="2.3">
 			- Minor updates to method signatures for forward compatibility
 		</release>
