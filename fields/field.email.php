@@ -50,9 +50,15 @@
 		public function displaySettingsPanel(XMLElement &$wrapper, $errors = null) {
 			parent::displaySettingsPanel($wrapper, $errors);
 
+			if ($this->get('id')) {
+				$wrapper->removeChildAt(5);
+				$wrapper->removeChildAt(4);
+			} else {
+				$wrapper->removeChildAt(4);
+				$wrapper->removeChildAt(3);
+			}
 			$div = new XMLElement('div', NULL, array('class' => 'two columns'));
-			$this->appendRequiredCheckbox($div);
-			$this->appendShowColumnCheckbox($div);
+			
 			$wrapper->appendChild($div);
 		}
 
