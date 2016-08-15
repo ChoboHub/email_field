@@ -70,7 +70,7 @@
 
 			$fields = array();
 			$fields['field_id'] = $id;
-			
+
 			return FieldManager::saveSettings($id, $fields);
 		}
 
